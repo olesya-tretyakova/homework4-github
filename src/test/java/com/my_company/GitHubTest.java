@@ -25,7 +25,7 @@ public class GitHubTest {
         // Открыть страницу SoftAssertions
         $("[data-filterable-for=wiki-pages-filter]").$(byText("SoftAssertions")).click();
 
-        //Проверить ,что внутри есть пример кода для JUnit5
+        //Проверить, что внутри есть пример кода для JUnit5
         $("#wiki-body").shouldHave(text("JUnit5"));
     }
 }
