@@ -9,11 +9,12 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class GitHubSelenideTest {
     String baseUrl = "https://github.com";
+
     @Test
-    void searchSelenideRepoOnGitHub(){
-            open(baseUrl);
-            $(By.name("q")).setValue("selenide").pressEnter();
-            $(".repo-list").shouldHave(Condition.text("selenide"));
+    void searchSelenideRepoOnGitHub() {
+        open(baseUrl);
+        $(By.name("q")).setValue("selenide").pressEnter();
+        $(".repo-list").shouldHave(Condition.text("selenide"));
 
     }
 }
